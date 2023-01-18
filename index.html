@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REDE CEARA</title>
+    <link rel="stylesheet" href="style-login.css">
+
+</head>
+
+<body onload="isLogin()">
+
+    <div class="container-login">
+        <img id="logo-inicial" src="./assests/LOGO-CEARA.png" alt="" srcset="">
+        <div>
+            <input class="comp-login" id="cpf" type="password" placeholder="Digite CPF ou CNPJ...">
+            <button class="comp-login-btn" onclick="logando()">ENTRAR</button>
+        </div>
+        <div class="footer">@RLSoluções</div>
+    </div>
+
+    <div id="load">
+        <div id='load-gif'>
+                    </div>
+                    <img id='load-gif1' src="../assests/loading.png" alt="">
+    </div>
+
+    <div id="mondal1" onclick="fechaMondal()">
+        <div id="mondal">
+            <div id="mondal-barra"><span>X</span></div>
+            <div id="mondal-int">
+
+                <p id="mondal-msg">CPF INVALIDO</p>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

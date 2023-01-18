@@ -1,0 +1,117 @@
+body {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;    
+}
+
+.container-login {
+    margin: auto;
+    /* border: 1px rgb(216, 8, 8) solid; */
+    height: 99vh;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    align-self: center;
+    text-align: center;
+    box-shadow: black;
+}
+
+#logo-inicial{
+    width: 99%;
+    /* border: 1px red solid; */
+}
+
+.comp-login ,.comp-login-btn {
+    width: 75%;
+    height: 30px;
+    border: 0;
+    border-bottom: 2px solid #3198C4;    
+    margin: 15px; 
+}
+
+.comp-login-btn{
+   background-color: #3198C4;  
+   font-weight: 800;
+   color: aliceblue;
+   border-radius: 6px;
+
+}
+
+#mondal1{
+    position: fixed;
+    top: 23vh;
+    right: 15vw;
+    width: 70vw;
+    max-width: 480px;
+    height: 130px;
+    background-color: #3198c4e8;
+    border-radius: 7px;
+    display: none;
+    
+    
+}
+
+#mondal-int{
+display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    text-shadow: #ffffffb7 1px 1px;
+    color: #313131;
+    width: 100%;
+    
+
+}
+
+#mondal-msg{
+    width: 100%;
+    width: 60vw;
+    text-align: center;
+}
+
+#mondal-barra{
+    /* border: 1px red solid; */
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 10px 0 0;
+    font-weight: 400;
+    width: 100%;
+
+}
+@keyframes is-rotating {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+#load{
+    position: fixed;
+    display: none;
+    justify-content: center;
+    top: 24vh;
+    width: 99vw;
+    height: 60vh;
+    background-color: #ffffffc7;
+     }
+
+#load-gif{
+    background-color: #ffffff00;
+    width: 180px;    
+    border-top: 5px #3198C4 solid;
+    animation: is-rotating 1s infinite;
+   height: 180px;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+#load-gif1{
+    top: 0px;
+    position: absolute;
+    z-index: 5555;
+    width: 50vw;
+    background-color: #ffffff00;  
+  }
