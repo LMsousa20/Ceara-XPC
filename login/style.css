@@ -1,3 +1,15 @@
+/* *{border: 1px rebeccapurple solid;} */
+
+body {
+    border: 0;
+    padding: 0;
+    margin: auto;
+    background-color: #1D9DD4;;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;   
+    max-width: 600px; 
+}
+
 #container2 {
     margin: auto;
     height: 100vh;
@@ -15,12 +27,20 @@
 
 }
 
+#banner-promo{
+    width: 95%;
+    height: 70vw;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
 
 
 #publi{
     margin-top: 20px;
     padding-top: 20px;
-    background-color: rgb(153, 155, 156);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
 }
 
@@ -67,7 +87,7 @@ div {
 #coin {
     font-size: 100px;
     box-shadow: 1px black;
-    text-shadow: black 1px 1px;
+    text-shadow: black 1px 1px 5px;
     
 
 }
