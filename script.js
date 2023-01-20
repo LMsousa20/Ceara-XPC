@@ -32,9 +32,14 @@ async function consulta(userVrfc) {
     rep2.forEach(element => {
         if (element.cpf_cnpj === userVrfc) {
             location.href = "./login/login.html";
+            
         }else{
-            document.getElementById('load').style.display = 'none';
-            erro(false)
+            
+            setTimeout(()=>{
+                document.getElementById('load').style.display = 'none';
+                erro(false)
+            },5000)
+            
             
         }
     });
