@@ -1,5 +1,10 @@
 let userID = '';
 
+var cpf = document.getElementById('cpf')
+cpf.addEventListener("keyup",(x)=>{if(x.key === 'Enter'){
+    btn.focus()
+}})
+
 function isLogin(){
     userID = localStorage.getItem("userLogin");
     if(userID != ''){
@@ -11,7 +16,6 @@ function isLogin(){
 }
 
 function logando() {
-
 
     userID = document.getElementById('cpf').value
     console.log("O CPF do Usuario e", userID)
@@ -27,26 +31,18 @@ function logando() {
 
 async function consulta(userVrfc) {
     document.getElementById('load').style.display = 'flex';
-    let rep1 = await fetch(`https://xpcoin.onrender.com/users/`)
+    let rep1 = await fetch(`https://xpcoin.onrender.com/users/${userVrfc}`)
     let rep2 = await rep1.json()
-    rep2.forEach(element => {
-        if (element.cpf_cnpj === userVrfc) {
+        if (rep2[0].cpf_cnpj === userVrfc) {
             location.href = "./login/login.html";
-            
         }else{
-            
             setTimeout(()=>{
                 document.getElementById('load').style.display = 'none';
                 erro(false)
             },5000)
-            
-            
         }
-    });
-
     console.log(rep2)
     console.log(userVrfc)
-
 }
 
 function erro(cpfValid) {

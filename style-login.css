@@ -96,7 +96,7 @@ display: flex;
     top: 24vh;
     width: 99vw;
     height: 60vh;
-    background-color: #ffffffc7;
+    background-color: #ffffff00;
      }
 
 #load-gif{
@@ -114,5 +114,7 @@ display: flex;
     position: absolute;
     z-index: 5555;
     width: 50vw;
-    background-color: #ffffff00;  
+    background-color: #ffffff00; 
+    border-radius: 50%;
+
   }
