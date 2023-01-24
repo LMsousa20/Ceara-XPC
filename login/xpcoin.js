@@ -10,7 +10,7 @@ async function reposta() {
 }
 
 function continua() {
-        lista.forEach((element) => {
+    lista.forEach((element) => {
         if (element.cpf_cnpj === userlogado) {
             Nome = element.nome
             XPC = element.qntd_pontos
@@ -27,4 +27,38 @@ function logout() {
 
 }
 
+function evaluation() {
+    location.href = "../evaluation/index.html";
+}
+
+function abremodal(aberto) {
+    if (aberto) {
+        document.getElementById('modal-produtos').style.display = "flex";
+        produtos()
+    } else {
+        document.getElementById('modal-produtos').style.display = "none";
+
+    }
+}
 reposta()
+
+async function produtos() {
+
+    let reqProduct = await fetch('https://xpcoin.onrender.com/products')
+    let repProduct = await reqProduct.json()
+    let listaProdutos = "";
+    console.table(repProduct)
+    repProduct.forEach(item => {
+        listaProdutos += `
+        <div class="item-product">
+        <img src="../assests/loading.png" class="img-item">
+        <div class="title-item">${item.nome.toUpperCase()}</div>
+        <div class="valor-item">${item.valuexpc}</div>
+      </div>
+        `
+    }
+    )
+
+    document.getElementById('sub-lista-modal-produtos').innerHTML = listaProdutos;
+
+}
