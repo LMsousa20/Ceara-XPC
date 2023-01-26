@@ -199,3 +199,22 @@ svg {
 .img-item{
     width: 50px;
 }
+
+@keyframes is-rotating {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+#load-gif{
+    margin: auto;
+    background-color: #ffffff00;
+    width: 80px;    
+    border-top: 5px #ffffff dashed;
+    animation: is-rotating 1s infinite;
+   height: 80px;
+    border-radius: 50%;
+    z-index: 100;
+    text-align: center;
+    margin-bottom: 60px;
+   
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="header">
+    <div id="menu"> <span onclick="abrebarra()" class="material-icons">
+        menu
+      </span>
+    </div>
+    <span>NOME DA EMPRESA</span>
+  </div class="header">
+
+  <div class="meio">
+
+    <div id="barra">
+
+      <div class="item-barra">
+        EMPRESA
+      </div>
+
+      <div class="item-barra">
+        PRODUTOS
+      </div>
+
+      <div class="item-barra">
+        BANNERS
+      </div>
+
+
+
+    </div>
+    <div id="section">
+      <h5>CADASTRO DE PRODUTOS</h5>
+      <div id="sub-cad-product">
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Nome</span>
+          </div>
+          <input type="text" class="form-control" placeholder="Usuário" aria-label="Usuário"
+            aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Descrição</span>
+          </div>
+          <textarea class="form-control" aria-label="Com textarea"></textarea>
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">R$</span>
+          </div>
+          <input type="text" class="form-control" aria-label="Quantia">
+          <div class="input-group-append">
+            <span class="input-group-text">.00</span>
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-primary">CADASTRAR</button>
+
+
+
+      </div>
+    </div>
+
+  </div>
+
+  <div id="footer">
+    Produzido por Lucas Monteiro - RL Soluções
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

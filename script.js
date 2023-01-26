@@ -33,7 +33,7 @@ async function consulta(userVrfc) {
     document.getElementById('load').style.display = 'flex';
     let rep1 = await fetch(`https://xpcoin.onrender.com/users/${userVrfc}`)
     let rep2 = await rep1.json()
-        if (rep2[0].cpf_cnpj === userVrfc) {
+        if (rep2[0].cpf === userVrfc) {
             location.href = "./login/login.html";
         }else{
             setTimeout(()=>{

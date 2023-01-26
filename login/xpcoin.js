@@ -11,7 +11,7 @@ async function reposta() {
 
 function continua() {
     lista.forEach((element) => {
-        if (element.cpf_cnpj === userlogado) {
+        if (element.cpf === userlogado) {
             Nome = element.nome
             XPC = element.qntd_pontos
         }
@@ -52,8 +52,8 @@ async function produtos() {
         listaProdutos += `
         <div class="item-product">
         <img src="../assests/loading.png" class="img-item">
-        <div class="title-item">${item.nome.toUpperCase()}</div>
-        <div class="valor-item">${item.valuexpc}</div>
+        <div class="title-item">${item.name.toUpperCase()}</div>
+        <div class="valor-item">${item.value_xpc}</div>
       </div>
         `
     }
